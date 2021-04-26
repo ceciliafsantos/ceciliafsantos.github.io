@@ -1,0 +1,237 @@
+body {
+    text-align: center;
+}
+
+.dotted {
+    border-top: 3px dotted #bbb;
+  }
+
+.icone-cabecalho {
+    height: 50px;
+    width: 50px;
+}
+
+#menu {
+    margin-left: 235px;
+}
+
+#bem-vindo {
+    background-image: url('source.gif');
+    padding-top: 215px;
+    padding-bottom: 200px;
+}
+
+.typewrite {
+    color:black;
+    text-decoration: none;
+    font-size: 40px;
+}
+
+p {
+    border-right: solid 3px black;
+    white-space: nowrap;
+    overflow: hidden;    
+    font-size: 28px;
+    color: black;
+    margin: 0 auto;
+  }
+  
+  /* Animation */
+  p {
+    animation: animated-text 4s steps(29,end) 1s 1 normal both,
+               animated-cursor 600ms steps(29,end) infinite;
+  }
+  
+  /* text animation */
+  
+  @keyframes animated-text{
+    from{width: 0;}
+    to{width: 472px;}
+  }
+  
+  /* cursor animations */
+  
+  @keyframes animated-cursor{
+    from{border-right-color: black;}
+    to{border-right-color: transparent;}
+  }
+
+.foto {
+    text-align: left;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.dados-pessoais {
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+}
+
+.contato {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.texto {
+    font-size: 18px;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-bottom: 50px;
+}
+
+#conhecimentos {
+    padding: 50px;
+    font-size: 28px;
+}
+
+.conhecimento {
+    margin: 50px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.progress-bar {
+	background-color: rgb(247, 80, 183) !important;
+}
+
+.tecnologia {
+    font-size: 18px;
+    padding-top:20px;
+    margin-bottom: 50px;
+}
+
+.ferramentas {
+    font-size: 18px;
+    padding-top: 20px;
+    margin-bottom: 50px;
+}
+
+.certificado {  
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    height: 300px;
+    width: 300px;
+}
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg:hover {opacity: 0.7;}
+  
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9); 
+  }
+  
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  .modal-content {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+
+#vida-academica {
+    padding: 50px;
+    font-size: 28px;
+}
+
+.logo-ceub {
+    height: 200px;
+    width: 200px;
+}
+
+.graduacao {
+    font-size: 18px;
+    padding-top: 70px;
+}
+
+.logo-sigma {
+    border: solid 1px green;
+    height: 200px;
+    width: 200px;
+}
+
+.ensino-medio {
+    font-size: 18px;
+    padding-top: 60px;
+}
+
+#experiencias {
+    padding: 50px;
+    font-size: 28px;
+}
+
+.list-group-item.active {
+    background-color: rgb(247, 80, 183) !important;
+    border-color: rgb(247, 80, 183) !important;
+}
+
+.sobre-experiencias {
+    font-size: 18px;
+    padding-top: 50px;
+    padding-left: 100px;
+}
+
+.detalhe-experiencia {
+    padding-top: 20px;
+}
+
+.insta {
+    color: #6c757d;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+}
+
